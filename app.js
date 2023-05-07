@@ -10,13 +10,11 @@ const fromEuroToDollar = (euro) => {
 console.log (fromEuroToDollar(1))
 
 const fromDollarToYen = (dollar) => {
-    //return dollar * (oneEuroIs["USD"] * oneEuroIs["JPY"])
     return dollar * (oneEuroIs["JPY"] / oneEuroIs["USD"]);
 }
 console.log (fromDollarToYen(1))
 
 const fromYenToPound = (yen) => {
-    //return yen * (oneEuroIs["JPY"] * oneEuroIs["GBP"])
     return yen * oneEuroIs["GBP"] / oneEuroIs["JPY"];
 }
 console.log (fromYenToPound(1))
